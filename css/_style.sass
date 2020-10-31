@@ -1,0 +1,188 @@
+@import mixins
+    
+$lightblue: #59a8f7
+$darkblue: #073E75
+$backgroundblue: #0a5c9f
+$lakeblue: #095B9B
+$footerblue: #072646
+
+
+
+body
+    background-color: $darkblue
+    color: white
+    margin: 0
+
+nav 
+    display: flex
+    background-color: $lightblue
+    font-family: 'Noto Serif'
+    font-size: 30px
+    width: 100%
+    height: 100px
+    justify-content: center
+    align-items: center
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5) 
+    position: fixed
+    top: 0
+    z-index: 1
+    img
+        width: 56px
+        height: 56px
+         
+    a 
+        text-decoration: none
+        color: white
+        margin: 0 25px
+
+#downarrow
+    display: block
+    width: 50px
+    margin: 200px auto 
+
+.home-section
+    h2
+        @include text-style(90px)
+        margin: 0 0 20px 15%
+        padding-top: 150px
+    img 
+        width: 350px
+        border-radius: 1px
+        display: block
+        margin: 50px auto 0 auto
+    p
+        width: 500px
+        @include text-style(23px)
+        text-align: center
+        margin: 0 auto
+
+.skills-section 
+    h2
+        @include text-style(90px)
+    .skill-graph
+        margin: 30px auto
+        width: fit-content
+        height: fit-content
+        .skill-group
+            margin: 40px 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            span
+                @include text-style(24px)
+                width: 180px
+                font-style: normal
+                margin: 0 40px 0 0
+            .skill-meter
+                background-color: $backgroundblue
+                width: 500px
+                height: 30px
+                float: right
+                vertical-align: center
+                border-radius: 20px 5px 5px 20px
+                .progress
+                    background-color: $lightblue
+                    height: 100%
+                    width: 400px
+                    border-radius: 20px
+                    box-shadow: 2px 0 6px rgb(0,0 ,0 , .3)
+
+.work-section
+    background-color: $lakeblue
+    padding: 100px 0 0 0
+    h2
+        @include text-style(90px)
+    .work-container
+        display: flex
+        margin: 0 auto
+        justify-content: center
+        .project-container
+            background-color: white
+            border-radius: 25px
+            width: 300px
+            height: 500px
+            margin: 0 30px
+            box-shadow: 1px 4px 6px #000000b6
+    #downarrow
+        padding-bottom: 100px
+        margin-bottom: 0
+
+.contact-section
+    h2
+        @include text-style(90px)
+    .contact-method-container
+        display: flex 
+        justify-content: center
+        align-items: center
+        form, span, .phone-canvas
+            margin: 0 50px
+        form
+            position: relative
+            display: block
+            width: 450px
+            height: 450px
+            background-color: $lightblue
+            border-radius: 25px
+            @include text-style(30px, 0)
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .4)
+            font-style: none
+            padding: 25px
+            label
+                display: block
+            input, #message-box
+                width:100%
+                display: block
+                border-radius: 10px
+                height: 50px
+                border: none
+                box-shadow: 0 3px 6px rgba(0, 0, 0, .4)
+                font-family: 'Times New Roman', Times, serif
+                font-size: 24px
+            #message-box
+                width:100%
+                height: 200px
+                margin-bottom: 100px
+                resize: none
+                font-family: 'Times New Roman', Times, serif
+                font-size: 20px
+            #send-it
+                color: $lightblue
+                @include text-style(40px,0)
+                font-style: normal
+                border: 5px solid $lightblue
+                border-radius: 30px
+                background-color: rgba(0, 0, 0, 0)
+                width: 250px
+                height: 70px
+                margin: 0 auto
+                cursor: pointer
+                box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.548)
+                text-shadow: 2px 4px 1px rgba(0, 0, 0, 0.548)
+        span
+            @include text-style(40px,0)
+            font-style: normal
+        .phone-canvas
+            background-color: $lightblue
+            padding: 30px
+            border-radius: 100%
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .4)
+            img
+                width: 100px
+footer
+    background-color: $footerblue
+    color: white
+    @include text-style(20px,0)
+    margin-top: 200px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    padding: 40px 0
+    font-style: none
+    span , a
+        margin: 20px
+    a 
+        color: white
+        text-decoration: none
+                
+        

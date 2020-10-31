@@ -5,7 +5,6 @@
         <link rel="stylesheet" href="./css/style.css" type="text/css">
     </head>
     <body>
-
         <nav>
             <a href="#Home"><img src="./assets/home-page.svg" alt="house_icon"></a>
             <a href="#Skills">Skills</a>
@@ -13,10 +12,8 @@
             <a href="#Contact">Contact</a>
         </nav>
 
-
-
         <section class="home-section">
-            <h2>Hello.</h2>
+            <h2 id="Home">Hello.</h2>
             <img src="./assets/profilepicture.png" alt="a_pic_of_me">
             <p>My name is Ryan Spears and I provide solutions for small businesses. I have a passion for innovation and web design</p>
             <img id="downarrow" src="/assets/downarrow.svg" alt="down_arrow">
@@ -24,7 +21,7 @@
         </section>
 
         <section class="skills-section">
-            <h2>Skills.</h2>
+            <h2 id="Skills">Skills.</h2>
              <section class="skill-graph">
                 <div class="graph-container">
                     <div class="skill-group">
@@ -64,36 +61,40 @@
                         </div>
                     </div>                 
                 </div>
+            <img id="downarrow" src="/assets/downarrow.svg" alt="down_arrow">
             </section>
         </section>
 
         <section class="work-section">
-            <h2>My Work.</h2>
+            <h2 id="Work">My Work.</h2>
             <div class="work-container">
                 <div class="project-container"></div>
                 <div class="project-container"></div>
                 <div class="project-container"></div>
             </div>
+            <img id="downarrow" src="/assets/downarrow.svg" alt="down_arrow">
         </section>
 
         <section class="contact-section">
-            <h2>Contact Me.</h2>
+            <h2 id="Contact">Contact Me.</h2>
             <div class="contact-method-container">
-                <div class="email-container">
-                    <span id="form-name">Name</span>
-                    <div id="name-input"></div>
-                    <span id="form-email">Email</span>
-                    <div id="email-input"></div>
-                    <span id="form-message">Message</span>
-                    <div id="message-input"></div>
-               </div>
+                <form action="mailto:18rspears@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    
+                    <label for="mail">Email</label>
+                    <input type="text" name="mail">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message-box" cols="30" rows="10"></textarea>
+                    <input id="send-it" type="submit" value="Send">
+                    </form>
                <span>Or...</span>
-               <a href="tel:570-362-4122">
+                <a class="phone-canvas" href="tel:570-362-4122">
                     <img src="./assets/phone.svg" alt="phone_icon">
-               </a>
+                </a>
             </div>
-            
-        </section>
+       </section>
         <footer>
             <span>Ryan Spears</span>
             <span>Located in Colorado Springs</span>
