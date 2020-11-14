@@ -1,62 +1,58 @@
-@media screen and ( max-width: 1000px  )
+@media screen and ( max-width: 800px  )
     nav
-        height: 250px
+        height: 150px
+        
         a
-            font-size: 60px
+            font-size: 2rem
         img
             width: 100px
             height: 100px
     .home-section
         h2
-            font-size: 250px
+            font-size: 5em
             margin-left: 30px
             padding-top: 200px
         img
             width: 600px
         p 
-            font-size: 50px
+            font-size: 2em
             margin: 100px auto
-            width: 600px
-        #downarrow
-            width: 100px
-            height: 100px
+            width: 80%
     .skills-section
         h2    
             padding-top: 30px
-            font-size: 200px
+            font-size: 5em
             margin-left: 30px
         .skill-graph
             width: 100%
             .graph-container
-                padding: 0 30px
+                padding: 0 100px
                 .skill-group
                     justify-content: space-between
                     span
-                        font-size: 50px
+                        font-size: 2em
                     .skill-meter
-                        height: 90px
-                        width: 600px
-        #downarrow
-            width: 100px
-            height: 100px
+                        height: 50px
+                        width: 70%
+                        .progress
+                            width: 80%
+    footer
+        span, a
+            font-size: 2rem
 
     .work-section
         h2    
             padding-top: 30px
-            font-size: 200px
+            font-size: 5em
             margin: 0 0 50px 30px
-        .work-container    
-            .project-container
-                width: 50%
-                height: 700px            
         #downarrow
-            width: 100px
-            height: 100px
+            margin-top: 50px
     .contact-section
         h2    
             padding-top: 30px
-            font-size: 200px
+            font-size: 6em
             margin-left: 30px
+            width: 200px
         .contact-method-container
             display: flex
             flex-wrap: wrap
@@ -79,4 +75,81 @@
     footer
         font-size: 50px
             
-                
+@media only screen and ( max-width: 450px )
+    body
+        width: 100%
+        #downarrow
+            margin: 25px auto
+            
+        nav    
+            display: flex
+            justify-content: center
+            flex-direction: column
+            width: 100%
+            height: fit-content
+            color: red
+            padding: 10px 0
+            a 
+                text-align: center
+                font-size: .75em
+                img 
+                    width: 50px
+                    height: 50px
+                    margin: 0 auto
+        .home-section
+            margin-top: 25px
+            width: 100%
+            h2
+                font-size: 2em
+            img
+                width: 80%
+            p
+                width: 80%
+                font-size: 1em
+                margin: 0 auto 50px auto
+        .skills-section
+            h2
+                font-size: 2em
+            .skill-graph
+                width: 80%   
+                margin: 0
+                .graph-container
+                    padding: 0 10px
+                    .skill-group
+                        span
+                            font-size: 1.25em
+                        .skill-meter
+                            height: 20px
+                            width: 80%
+        .work-section
+            padding-top: 10px
+            h2
+                font-size: 2em
+            .work-container
+                .project-container
+                    background-size: cover
+                    height: 200px
+        .contact-section
+            h2
+                font-size: 2em
+            .contact-method-container
+                form
+                    width: 60%
+                    label
+                        font-size: 1em
+                    #send-it
+                        width: 100px
+                        font-size: 1em
+                span
+                    font-size: 3em
+                    margin-top: 50px
+                .phone-canvas
+                    width: 50px
+                    height: 50px
+                    margin-top: 50px
+                    img
+                        width: 100%
+    footer
+        margin-top: 50px
+        span, a
+            font-size: 1rem
