@@ -426,7 +426,7 @@ footer a {
   }
   body .skills-section .skill-graph {
     width: 80%;
-    margin: 0;
+    margin: 0 auto;
   }
   body .skills-section .skill-graph .graph-container {
     padding: 0 10px;
