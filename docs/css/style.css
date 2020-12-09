@@ -43,7 +43,7 @@ nav a {
   padding-top: 150px;
 }
 .home-section img {
-  width: 40%;
+  width: 30%;
   border-radius: 1px;
   display: block;
   margin: 50px auto 0 auto;
@@ -99,7 +99,28 @@ nav a {
   height: 30px;
   float: right;
   vertical-align: center;
-  border-radius: 20px 5px 5px 20px;
+  border-radius: 20px;
+}
+.skills-section .skill-graph .skill-group .skill-meter #html-progress {
+  width: 90%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #react-progress {
+  width: 85%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #css-progress {
+  width: 85%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #python-progress {
+  width: 80%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #javascript-progress {
+  width: 75%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #git-progress {
+  width: 70%;
+}
+.skills-section .skill-graph .skill-group .skill-meter #sass-progress {
+  width: 75%;
 }
 .skills-section .skill-graph .skill-group .skill-meter .progress {
   background-color: #59a8f7;
